@@ -1,0 +1,55 @@
+@charset "uft-8";
+/* 문서에 최상단에 위치하게 할것 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩이나 마진을 키우더라도 박스크기가 커지는 걸 막을 수 있다 */
+}
+
+body
+{
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+/* CSS reset */
+
+#box0
+{
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(71, 118, 160);
+    position: relative;
+
+}
+
+#box1
+{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+
+    /* 매우중요!! 가운데로 객체 보내기 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* 매우중요!! 화면 가운데로 객체 보내기 */
+    
+    /* 단, 부모가 있을 경우(부모의 position이 static이 아닐경우)
+    부모의 가운데로 움직인다. */
+}
